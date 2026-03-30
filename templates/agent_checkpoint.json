@@ -1,0 +1,23 @@
+{
+  "seiryu_type": "checkpoint",
+  "task_id": "task_001",
+  "task_description": "one-line description of the full task",
+  "created": "YYYY-MM-DD",
+  "last_updated": "YYYY-MM-DD",
+  "step": 0,
+  "total_steps_estimate": 3,
+  "status": "in_progress",
+  "allowed_status_values": [
+    "in_progress",
+    "completed",
+    "error"
+  ],
+  "completed": [],
+  "current_result": "",
+  "next_plan": [
+    "step 1: what to do next"
+  ],
+  "context_summary": "what the next step must know to continue",
+  "rollback_info": "",
+  "error_log": ""
+}

@@ -1,0 +1,12 @@
+# Seiryu memory repository
+# Track everything by default — memory is precious
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

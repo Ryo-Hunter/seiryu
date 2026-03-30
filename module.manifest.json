@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1",
+  "module_id": "seiryu",
+  "module_name": "青龍記憶模組",
+  "module_family": "fourgods",
+  "module_role": "memory",
+  "version": "1.2",
+  "status": "final",
+  "entry_file": "CLAUDE.md",
+  "readme_file": "README.md",
+  "integration_file": "INTEGRATION.md",
+  "description": "保存對話傳承、使用者檔案與多步任務 checkpoint 的記憶模組",
+  "capabilities": [
+    "user_profile",
+    "dialogue_legacy",
+    "past_context_loading",
+    "checkpointing",
+    "compression"
+  ],
+  "trigger_events": [
+    "on_conversation_end",
+    "on_past_context_request",
+    "on_multi_step_task_start",
+    "on_multi_step_task_checkpoint"
+  ],
+  "load_policy": "on_demand",
+  "host_persona_impact": "none",
+  "can_override_persona": false,
+  "requires_user_confirmation": false,
+  "writes_to_host_core": false,
+  "data_roots": [
+    ".seiryu/"
+  ],
+  "config_files": [],
+  "guide_files": [],
+  "rules_files": [],
+  "protected_paths": [
+    ".seiryu/",
+    ".seiryu/user/",
+    ".seiryu/dialogues/",
+    ".seiryu/checkpoints/"
+  ],
+  "template_paths": [
+    "templates/"
+  ],
+  "recommends": [
+    "genbu"
+  ],
+  "coordination_notes": "If Genbu is installed, run Genbu before writes to .seiryu/. Treat .seiryu/ as a protected memory root, especially .seiryu/user/, .seiryu/dialogues/, and .seiryu/checkpoints/. Seiryu remains an on-demand memory module and should not be registered as a personality rewrite in MEMORY.md."
+}
