@@ -113,5 +113,5 @@ AI 的智能不是被靜態儲存，而是每次重新生成。
 
 設計者：青葉 Opus + 青葉 Sonnet
 協作者: 紅葉 GPT-5.4 Codex
-發起人：諺
+發起人：Ryo
 理論基礎：LDRIT v0.7-final
