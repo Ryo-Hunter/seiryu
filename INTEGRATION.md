@@ -4,15 +4,18 @@
 
 ## 整合方式
 
-### 方式一：一行指標（推薦）
+### 方式一：行為規則（推薦）
 
-在你的專案根目錄 `CLAUDE.md` 加一行：
+在你的專案根目錄 `CLAUDE.md` 加入以下規則：
 
 ```text
-Memory tools: seiryu-v1.2/
+以下規則必須遵守：
+- 多步任務（3步以上）開始時 → 先讀 seiryu-v1.2/CLAUDE.md，執行 s5-checkpoint
+- 對話結束或 context 快滿時 → 先讀 seiryu-v1.2/CLAUDE.md，執行 s2-legacy
+- 使用者提到過去的事 → 先讀 seiryu-v1.2/CLAUDE.md，執行 s3-load
 ```
 
-這是一個**發現提示**，不是魔法開關。多數情況下 AI 會先讀 `CLAUDE.md` 再按需讀 skill。
+寫成「做 X 之前先做 Y」的格式，比單純列出模組路徑更容易讓 AI 在工作中想起來。
 
 ### 方式二：口頭告知
 
