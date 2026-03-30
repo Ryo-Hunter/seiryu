@@ -36,6 +36,16 @@
 
 ---
 
+## 搭配 Claude Code Hooks（推薦）
+
+方式一到三都依賴 AI 自律。如果你同時安裝了玄武（Genbu），玄武提供了 Claude Code Hooks 腳本，可以在平台層自動提醒 AI。
+
+其中 `genbu-memory-guard.sh` 會在寫入 `.seiryu/` 目錄前自動提醒 AI 確認，間接保護青龍的記憶資料。
+
+詳見玄武的 `INTEGRATION.md` → 方式四：Claude Code Hooks。
+
+---
+
 ## 重要：不要把技能條款放進 MEMORY.md
 
 `MEMORY.md` 是 AI 的人格核心，每次對話都會載入。
