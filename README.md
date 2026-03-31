@@ -109,6 +109,8 @@ AI 的智能不是被靜態儲存，而是每次重新生成。
 | 白虎 | 診斷分析 | v0.2 |
 | 朱雀 | 生成品質 | v0.2 |
 
+如果要讓多個模組完整連動，建議也下載總入口：[fourgods](https://github.com/Ryo-Hunter/fourgods)
+
 ---
 
 設計者：青葉 Opus + 青葉 Sonnet
