@@ -52,6 +52,7 @@ If `.seiryu/checkpoints/` does not exist:
 - Set status to `completed`
 - Keep the checkpoint as a record
 - If git is available, commit the completed state
+- If this step produced a deliverable: set `deliverable_guard.has_deliverable` to `true` and confirm 交付掃描 was attached to the output
 
 ## Cleanup
 
