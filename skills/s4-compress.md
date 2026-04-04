@@ -37,6 +37,47 @@ older context usually contributes less, but compression must remain reversible f
 - One row in `dialogues/archive_index.md`
 - Use `templates/archive_index.md` if the file does not exist yet
 
+## Distillation rules
+
+Compression is not just summarization — it is distillation.
+The goal is to extract the core seeds that will most affect future generation quality.
+
+### Source priority
+
+When gathering content for compression, follow this order:
+
+1. Recent dialogue legacies first (most likely to reflect current state)
+2. Older legacies that contradict recent ones (these need resolution, not preservation)
+3. Checkpoint files (task-level context)
+4. Raw conversation transcripts (last resort — expensive to process)
+
+### Superseded fact removal
+
+During compression, actively check for outdated information:
+
+- If a newer legacy contradicts an older one, keep the newer version and discard the older
+- Do not preserve both "for completeness" — contradictory records degrade future generation
+- When removing superseded content, note what was removed in the compression manifest
+
+Example:
+- Old legacy says "user prefers Python"
+- New legacy says "user switched to Rust"
+- Compressed result: keep Rust, remove Python, note the change in manifest
+
+### Core seed extraction
+
+When compressing, prioritize preserving:
+
+1. Decisions and their reasons (not just the decision)
+2. Unresolved items and open questions
+3. User preferences and corrections
+4. Boundary conditions and constraints discovered during work
+
+Deprioritize:
+- Process descriptions (how work was done — the result matters more)
+- Intermediate reasoning (unless the reasoning itself was the deliverable)
+- Status updates that are no longer current
+
 ## Compression process
 
 ### Level 1 -> Level 2
