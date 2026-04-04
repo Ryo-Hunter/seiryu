@@ -1,8 +1,8 @@
 # 青龍 Seiryu v1.2
 
-**四神系統的第一神 - 記憶與傳承**
+**繁體中文** | [English](README_EN.md)
 
-> **English:** Seiryu is a memory & inheritance module for AI assistants. It saves user profiles, dialogue legacies, and task checkpoints as local Markdown/JSON files, so the next conversation can pick up where the last one left off. No cloud, no database — just files on your machine. See `CLAUDE.md` for the AI entry point.
+**四神系統的第一神 - 記憶與傳承**
 
 ---
 
