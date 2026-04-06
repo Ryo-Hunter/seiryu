@@ -19,5 +19,11 @@
   ],
   "context_summary": "what the next step must know to continue",
   "rollback_info": "",
-  "error_log": ""
+  "error_log": "",
+  "deliverable_guard": {
+    "has_deliverable": false,
+    "guard_passed": false,
+    "escalated_to_module": false,
+    "notes": ""
+  }
 }

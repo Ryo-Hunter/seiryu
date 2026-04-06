@@ -1,8 +1,8 @@
 # 青龍 Seiryu v1.2
 
-**四神系統的第一神 - 記憶與傳承**
+**繁體中文** | [English](README_EN.md)
 
-> **English:** Seiryu is a memory & inheritance module for AI assistants. It saves user profiles, dialogue legacies, and task checkpoints as local Markdown/JSON files, so the next conversation can pick up where the last one left off. No cloud, no database — just files on your machine. See `CLAUDE.md` for the AI entry point.
+**四神系統的第一神 - 記憶與傳承**
 
 ---
 
@@ -108,6 +108,8 @@ AI 的智能不是被靜態儲存，而是每次重新生成。
 | 玄武 | 防禦安全 | v0.1 |
 | 白虎 | 診斷分析 | v0.2 |
 | 朱雀 | 生成品質 | v0.2 |
+
+如果要讓多個模組完整連動，建議也下載總入口：[fourgods](https://github.com/Ryo-Hunter/fourgods)
 
 ---
 
